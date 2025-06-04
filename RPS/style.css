@@ -14,7 +14,13 @@ body {
 .title-bar {
   background-color: black;
   padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  width: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+  justify-content: center;
 }
 
 .title-bar h1 {
@@ -89,6 +95,27 @@ img {
   font-size: 3rem;
   font-weight: bold;
   color: #f1c40f;
+}
+
+.back-link {
+  position: absolute;
+  left: 2rem;
+}
+
+.backbtn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.backbtn:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05);
 }
 
 .msg-container {
